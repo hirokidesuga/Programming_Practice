@@ -9,7 +9,7 @@ def get_user_input():
     while True:
         n = -1
         x = input("要素数:")
-        if x.isdigit():
+        if x.isdecimal():
             n = int(x)
             if val_min <= n <= val_max:
                 return n
@@ -20,8 +20,8 @@ def random_list(b):
     while True:
         range_min = input("要素の最小値:")
         range_max = input("要素の最大値:")
-        if (range_min[0] == "-" and range_min[1:].isdigit() or range_min.isdigit()) and (
-                range_max[0] == "-" and range_max[1:].isdigit() or range_max.isdigit()):
+        if (range_min[0] == "-" and range_min[1:].isdecimal() or range_min.isdecimal()) and (
+                range_max[0] == "-" and range_max[1:].isdecimal() or range_max.isdecimal()):
             range_min = int(range_min)
             range_max = int(range_max)
             if range_min < range_max:
