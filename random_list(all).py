@@ -36,7 +36,7 @@ def random_list(b):
 def list_max(a):
     if not a:
         return "なし"
-    max_value = min(a)
+    max_value = max(a)
     return max_value
 
 def list_min(a):
